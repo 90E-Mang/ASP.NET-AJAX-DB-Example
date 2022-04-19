@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApp", "MyApp\MyApp.csproj", "{84E427A2-51FE-4F53-988F-D20B3B712371}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVCAjax", "WebMVCAjax\WebMVCAjax.csproj", "{741A56F3-0006-4B67-833B-4F434E2CC51F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84E427A2-51FE-4F53-988F-D20B3B712371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E427A2-51FE-4F53-988F-D20B3B712371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E427A2-51FE-4F53-988F-D20B3B712371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E427A2-51FE-4F53-988F-D20B3B712371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741A56F3-0006-4B67-833B-4F434E2CC51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741A56F3-0006-4B67-833B-4F434E2CC51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741A56F3-0006-4B67-833B-4F434E2CC51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741A56F3-0006-4B67-833B-4F434E2CC51F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {495C5A37-C3E0-4D7D-9855-C197D9443F58}
+	EndGlobalSection
+EndGlobal
