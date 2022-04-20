@@ -4,3 +4,40 @@
 <h3>사용자번호 : @Model.UserNo</h3>
 <h3>사용자 이름 : @Model.UserName</h3>
 
+@{ var total = 10;}
+@{ var message = "hello world";}
+
+<h3>this value is @total</h3>
+<h3>this value is @message</h3>
+
+@{ var myFilePath = @"C:\MyFolder\"; }
+<p>The path is: @myFilePath</p>
+
+<table border="1">
+    <tr>
+        <td>Requested URL</td>
+        <td>Relative Path</td>
+        <td>Full Path</td>
+        <td>HTTP Request Type</td>
+    </tr>
+    <tr>
+        <td>@Request.Url</td>
+        <td>@Request.FilePath</td>
+        <td>@Request.MapPath(Request.FilePath)</td>
+        <td>@Request.RequestType</td>
+    </tr>
+</table>
+
+@{
+    var result = "";
+    if (true)
+    {
+        result = "true";
+    }
+    else
+    {
+        result = "false";
+    }
+
+}
+<p>결과 : @result</p>

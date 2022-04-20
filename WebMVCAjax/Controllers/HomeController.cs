@@ -37,13 +37,13 @@ namespace WebMVCAjax.Controllers
         // 데이터 수정
         public JsonResult Update(Employee emp)
         {
-            return Json(empDB.Add(emp), JsonRequestBehavior.AllowGet);
+            return Json(empDB.update(emp), JsonRequestBehavior.AllowGet);
         }
 
         // 데이터 수정
-        public JsonResult Delete(Employee emp)
+        public JsonResult Delete(int ID)
         {
-            return Json(empDB.Add(emp), JsonRequestBehavior.AllowGet);
+            return Json(empDB.Delete(ID), JsonRequestBehavior.AllowGet);
         }
         public ActionResult Index()
         {

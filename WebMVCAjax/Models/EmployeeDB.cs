@@ -62,13 +62,36 @@ namespace WebMVCAjax.Models
         }
         public int update(Employee emp)
         {
+            int returnValue = 0;
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("insertUPdateEmployee", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.AddWithValue("@id", emp.EmployeeID);     // 프로시저가 insert update 다가져서 줘야댐..
+                comm.Parameters.AddWithValue("@Name", emp.Name);
+                comm.Parameters.AddWithValue("@Age", emp.Age);
+                comm.Parameters.AddWithValue("@State", emp.State);
+                comm.Parameters.AddWithValue("@Country", emp.Country);
+                comm.Parameters.AddWithValue("@Action", "update");
 
-            return 0;
+                returnValue = comm.ExecuteNonQuery();
+            }
+            return returnValue;
         }
-        public int Delete(int id)
+        public int Delete(int ID)
         {
+            int returnValue = 0;
+            using (SqlConnection conn = new SqlConnection(cs))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand("deleteEmployee", conn);
+                comm.CommandType = CommandType.StoredProcedure;
+                comm.Parameters.AddWithValue("@id", ID);    
 
-            return 0;
+                returnValue = comm.ExecuteNonQuery();
+            }
+            return returnValue;
         }
     }
 }
